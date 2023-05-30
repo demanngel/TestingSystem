@@ -1,0 +1,41 @@
+﻿<Window x:Class="TestingSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestingSystem"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="615" Width="915" MinWidth="915" MinHeight="615">
+    <Grid Style="{StaticResource GridStyle}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Border Style="{StaticResource BorderStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="700" Height="400" Grid.ColumnSpan="8" Grid.RowSpan="6"/>
+        <Button Style="{StaticResource ButtonStyle}" x:Name="Button" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" Height="40" BorderThickness="0,0,0,0" Content="Далее" Foreground="#FF343E5F" Grid.ColumnSpan="2" Grid.Column="3" Click="Button1_Click" Grid.Row="6">
+        </Button>
+        <StackPanel Grid.Row="1" Grid.RowSpan="4" Grid.Column="1" Grid.ColumnSpan="6">
+            <Label x:Name="QuestionNumber" Style="{StaticResource TextStyle}" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock x:Name="QuestionText" Style="{StaticResource TextStyle}" Text="TextBlock"/>
+            <RadioButton x:Name="RadioButton1" Style="{StaticResource RadioButtonStyle}" Content="RadioButton" HorizontalAlignment="Left" Checked="RadioButton1_Checked"/>
+            <RadioButton x:Name="RadioButton2" Style="{StaticResource RadioButtonStyle}" Content="RadioButton" HorizontalAlignment="Left" Checked="RadioButton2_Checked"/>
+            <RadioButton x:Name="RadioButton3" Style="{StaticResource RadioButtonStyle}" Content="RadioButton" HorizontalAlignment="Left" Checked="RadioButton3_Checked"/>
+            <RadioButton x:Name="RadioButton4" Style="{StaticResource RadioButtonStyle}" Content="RadioButton" HorizontalAlignment="Left" Checked="RadioButton4_Checked"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
