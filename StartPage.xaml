@@ -1,0 +1,68 @@
+﻿<Window x:Class="TestingSystem.StartPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestingSystem"
+        mc:Ignorable="d"
+               Title="" Height="650" Width="950">
+    <Grid Style="{StaticResource GridStyle}">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Border Style="{StaticResource BorderStyle}" Width="450" Height="50" Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,17">
+                <Label Style="{StaticResource TextStyle}" Content="Выберите тест для прохождения" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            </Border>
+            <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button Style="{StaticResource ButtonStyle}" Width="190" Height="160" Margin="10,10,10,10" Click="Button_Click">
+                    <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center">
+                        <Label Style="{StaticResource TextStyle}" HorizontalAlignment="Center">ЛР№1</Label>
+                        <TextBlock Width="170" Height="110" TextWrapping="Wrap" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center"> Исследование методом наложения цепи постоянного тока</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" Width="190" Height="160" Margin="10,10,10,10" Click="Button_Click_1">
+                    <StackPanel  VerticalAlignment="Top" HorizontalAlignment="Center">
+                        <Label Style="{StaticResource TextStyle}" HorizontalAlignment="Center">ЛР№2</Label>
+                        <TextBlock Width="170" Height="110" TextWrapping="Wrap" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center"> Исследование цепи постоянного тока методом УП и методом ЭГ</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" Width="190" Height="160" Margin="10,10,10,10" Click="Button_Click_2">
+                    <StackPanel  VerticalAlignment="Top" HorizontalAlignment="Center">
+                        <Label Style="{StaticResource TextStyle}" HorizontalAlignment="Center">ЛР№3</Label>
+                        <TextBlock Width="170" Height="110" TextWrapping="Wrap" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center"> Исследование простых цепей синусоидального тока</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" Width="190" Height="160" Margin="10,10,10,10" Click="Button_Click_3">
+                    <StackPanel  VerticalAlignment="Top" HorizontalAlignment="Center">
+                        <Label Style="{StaticResource TextStyle}" HorizontalAlignment="Center">ЛР№4</Label>
+                        <TextBlock Width="170" Height="110" TextWrapping="Wrap" FontSize="16" HorizontalAlignment="Center" TextAlignment="Center"> Исследование резонанса в одиночных колебательных контурах</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" Width="190" Height="160" Margin="10,10,10,10" Click="Button_Click_4">
+                    <StackPanel  VerticalAlignment="Top" HorizontalAlignment="Center">
+                        <Label Style="{StaticResource TextStyle}" HorizontalAlignment="Center">ЛР№5</Label>
+                        <TextBlock Width="170" Height="110" TextWrapping="Wrap" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center"> Исследование трёхфазной системы при соединении звездой</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" Width="190" Height="160" Margin="10,10,10,10" Click="Button_Click_5">
+                    <StackPanel>
+                        <Label Style="{StaticResource TextStyle}" HorizontalAlignment="Center">ЛР№6</Label>
+                        <TextBlock Width="170" Height="110" TextWrapping="Wrap" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center">Переходные процессы в линейных цепях с сосредоточенными параметрами</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" Width="190" Height="160" Margin="10,10,10,10" Click="Button_Click_6">
+                    <StackPanel  VerticalAlignment="Top" HorizontalAlignment="Center">
+                        <Label Style="{StaticResource TextStyle}" HorizontalAlignment="Center">ЛР№7</Label>
+                        <TextBlock Width="170" Height="110" TextWrapping="Wrap" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center"> Исследования пассивного четырёхполюсника</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Style="{StaticResource ButtonStyle}" Width="190" Height="160" Margin="10,10,10,10" Click="Button_Click_7">
+                    <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center">
+                        <Label Style="{StaticResource TextStyle}" HorizontalAlignment="Center">ЛР№8</Label>
+                        <TextBlock Width="170" Height="110" TextWrapping="Wrap" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center"> Исследование однородной линии в установившемся режиме</TextBlock>
+                    </StackPanel>
+                </Button>
+            </WrapPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>
